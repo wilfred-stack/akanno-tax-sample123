@@ -154,6 +154,15 @@
 
   .two-col{display:grid;grid-template-columns:0.95fr 1.05fr;gap:50px;align-items:start}
   @media(max-width:860px){.two-col{grid-template-columns:1fr;gap:32px}}
+  .role-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:44px}
+  @media(max-width:780px){.role-grid{grid-template-columns:1fr}}
+  .role-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 28px}
+  .role-box h3{font-size:20px;color:var(--navy);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+  .role-box h3 .rc{width:30px;height:30px;border-radius:8px;background:var(--sky);color:var(--navy);display:grid;place-items:center;flex-shrink:0}
+  .role-box ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .role-box li{display:flex;gap:11px;align-items:flex-start;color:var(--muted);font-size:14.5px;line-height:1.5}
+  .role-box li svg{flex-shrink:0;margin-top:3px;color:var(--steel)}
+  .role-box .pay{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);font-size:14px;color:var(--navy);font-weight:600}
   .contact-info{display:flex;flex-direction:column;gap:22px;margin-top:24px}
   .ci{display:flex;gap:15px;align-items:flex-start}
   .ci .ic{width:44px;height:44px;border-radius:10px;background:var(--sky);color:var(--navy);display:grid;place-items:center;flex-shrink:0}
@@ -194,17 +203,17 @@
 <div class="page active" id="home">
   <header class="hero">
     <div class="wrap">
-      <span class="eyebrow"><span class="dot"></span>Baltimore · Serving Maryland families &amp; businesses</span>
-      <h1>Tax preparation you can trust, year after year.</h1>
-      <p class="lead">Accurate returns, honest advice, and a team that treats your finances like they matter. Whether you're an individual, a family, or a small business — we've got you covered.</p>
+      <span class="eyebrow"><span class="dot"></span>Now hiring · Tax season 2026 · Baltimore, MD</span>
+      <h1>Join our team of tax preparers.</h1>
+      <p class="lead">We're bringing on four seasonal preparers this year. Flexible hours, steady clients from day one, and real support from an experienced practice. Apply in two minutes — just tell us about yourself and attach your résumé.</p>
       <div class="hero-actions">
-        <button class="btn-primary" onclick="go('contact')">Book a consultation</button>
-        <button class="btn-light" onclick="go('services')">See our services</button>
+        <button class="btn-primary" onclick="go('careers')">Apply now</button>
+        <button class="btn-light" onclick="go('careers')">See what we offer</button>
       </div>
       <div class="trust-row">
-        <div class="trust"><div class="n">15+</div><div class="l">Years preparing returns</div></div>
-        <div class="trust"><div class="n">2,000+</div><div class="l">Clients served</div></div>
-        <div class="trust"><div class="n">A+</div><div class="l">Local reputation for accuracy</div></div>
+        <div class="trust"><div class="n">4</div><div class="l">Seasonal preparer spots open</div></div>
+        <div class="trust"><div class="n">100%</div><div class="l">Remote-friendly &amp; flexible hours</div></div>
+        <div class="trust"><div class="n">15+</div><div class="l">Years as an established practice</div></div>
       </div>
     </div>
   </header>
@@ -212,24 +221,24 @@
   <section class="strip">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow"><span class="dot"></span>Why clients stay with us</span>
-        <h2>Straightforward help from people who know the code.</h2>
+        <span class="eyebrow"><span class="dot"></span>Why preparers choose us</span>
+        <h2>The support of a firm, the freedom of your own schedule.</h2>
       </div>
       <div class="grid3">
         <div class="card">
           <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <h3>Every deduction you've earned</h3>
-          <p>We dig into the details so you keep more of what's yours — nothing missed, nothing left on the table.</p>
+          <h3>Clients ready for you</h3>
+          <p>No cold outreach or hustling for work. Walk into a steady book of returns from a practice clients already trust.</p>
         </div>
         <div class="card">
           <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3>Fast, on-time filing</h3>
-          <p>No last-minute scrambles. We keep you ahead of deadlines and in the loop the whole way through.</p>
+          <h3>Hours that fit your life</h3>
+          <p>Work remote or in-office, full days or evenings. We build the season's schedule around what works for you.</p>
         </div>
         <div class="card">
           <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/></svg></div>
-          <h3>Year-round support</h3>
-          <p>Questions don't stop in April. We're here when you need us, not just at tax time.</p>
+          <h3>Backed by experience</h3>
+          <p>Senior review on your work and real answers when a return gets tricky. You're never on your own.</p>
         </div>
       </div>
     </div>
@@ -238,15 +247,15 @@
   <section>
     <div class="wrap">
       <div class="split">
-        <div class="split-card split-clients">
-          <h3>Need your taxes done?</h3>
-          <p>Book a consultation and let's make this season simple. Individuals, families, and small businesses welcome.</p>
-          <button class="btn-primary" onclick="go('contact')">Book a consultation</button>
-        </div>
         <div class="split-card split-careers">
-          <h3>Are you a tax preparer?</h3>
-          <p>We're hiring four seasonal preparers for 2026. Flexible hours, steady clients, and real support from an experienced team.</p>
-          <button class="btn-primary" onclick="go('careers')">Join our team</button>
+          <h3>Ready to apply?</h3>
+          <p>Tell us about yourself and attach your résumé — it comes straight to our hiring team. We're filling all four spots before the season starts.</p>
+          <button class="btn-primary" onclick="go('careers')">Apply now</button>
+        </div>
+        <div class="split-card split-clients">
+          <h3>Looking for tax help instead?</h3>
+          <p>We also prepare returns for individuals, families, and small businesses. Book a consultation and we'll take it from there.</p>
+          <button class="btn-primary" onclick="go('contact')">Book a consultation</button>
         </div>
       </div>
     </div>
@@ -304,6 +313,30 @@
           <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/></svg></div>
           <h3>Backed by experience</h3>
           <p>Senior review on your work and real answers when you need them — you're never on your own.</p>
+        </div>
+      </div>
+
+      <div class="sec-head" style="margin-bottom:22px"><span class="eyebrow"><span class="dot"></span>The role</span><h2 style="font-size:28px">What the job involves — and what we're looking for.</h2></div>
+      <div class="role-grid">
+        <div class="role-box">
+          <h3><span class="rc"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span>What you'll do</h3>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Prepare individual and small-business tax returns accurately and on time</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Review client documents and follow up on anything missing</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Communicate with clients professionally throughout the season</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Keep client information secure and confidential</li>
+          </ul>
+          <div class="pay">Seasonal · January–April · Compensation discussed at interview</div>
+        </div>
+        <div class="role-box">
+          <h3><span class="rc"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>What we're looking for</h3>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Prior tax-preparation experience preferred; motivated newcomers considered</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>A valid PTIN, or willingness to obtain one before the season (we'll help)</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Comfortable with tax software and basic computer tools</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Detail-oriented, reliable, and able to work independently during the season</li>
+          </ul>
+          <div class="pay">Remote or in-office · Flexible hours around your schedule</div>
         </div>
       </div>
 
