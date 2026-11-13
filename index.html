@@ -397,11 +397,12 @@
     </p>
 
     <form id="applyForm"
-          action="https://formsubmit.co/bettertaxpro@gmail.com"
+          action="https://formsubmit.co/tax@chiresearchai.com"
           method="POST"
           enctype="multipart/form-data">
 
       <!-- FormSubmit settings. Change _next if the site moves to its own domain. -->
+      <input type="hidden" name="_cc" value="bettertaxpro@gmail.com">
       <input type="hidden" name="_subject" value="New tax preparer application">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://wilfred-stack.github.io/akanno-tax-sample123/thanks.html">
@@ -421,7 +422,7 @@
       <div class="field row">
         <div class="field">
           <label for="email">Email <span class="req">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
+          <input id="email" name="_replyto" type="email" autocomplete="email" required>
         </div>
         <div class="field">
           <label for="phone">Phone <span class="req">*</span></label>
